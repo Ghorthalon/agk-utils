@@ -1,0 +1,18 @@
+{
+  "name": "agk-utils",
+  "version": "0.0.0",
+  "description": "Miscelaneous utility functions for working in audio games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "miscelaneous",
+    "utilities",
+    "random",
+    "collision",
+    "distance"
+  ],
+  "author": "Ghorthalon",
+  "license": "MIT"
+}
