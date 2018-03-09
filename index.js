@@ -51,6 +51,15 @@ class GameUtils {
 		return (a.x <= (b.x + b.width) && (a.x + a.width) >= b.x) && (a.y <= (b.y + b.height) && (a.y + a.height) >= b.y) && (a.z <= (b.z + b.depth) && (a.z + a.depth) >= b.z);
 	}
 
+	/** Checks if two 2D objects collide.
+	* @param {object} a - The first object, needs to have x, y properties.
+	* @param {number} b - The second object, needs to have x, y properties.
+	* @return {boolean} Collides or not.
+*/
+	static isCollide(a, b) {
+		return (a.x < (b.x + b.width) && (a.x + a.width) > b.x) && (a.y < (b.y + b.height) && (a.y + a.height) > b.y);
+	}
+	
 	/** Random integer between min and max.
 	* @param {number} min - The minimum value
 	* @param {number} max - the maximum value
